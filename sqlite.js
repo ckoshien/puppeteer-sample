@@ -14,8 +14,8 @@ const fs = require('fs')
     // .then((res)=>{
       //var uInt8Array = new Uint8Array(res);
       //var db = new SQL.Database(uInt8Array);
-      var db = new SQL.Database('https://github.com/ckoshien/puppeteer-sample/blob/master/sample2','OPEN_READONLY')
-      //var db = new SQL.Database('./sample2','OPEN_READONLY')
+      //var db = new SQL.Database('https://github.com/ckoshien/puppeteer-sample/blob/master/sample2','OPEN_READONLY')
+      var db = new SQL.Database('./sample2','OPEN_READONLY')
       db.serialize(() => {
       var array = [];
       //db.run("");
